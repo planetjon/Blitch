@@ -1,0 +1,195 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol
+{
+	margin: 1em 0;
+	margin-left: 1em;
+	padding: 0;
+}
+
+ul
+{
+    list-style-type: square;
+}
+
+li
+{
+	margin: 0;
+	margin-bottom: .5em;
+	line-height: 1.25em;
+	list-style-position: outside;
+}
+
+p
+{
+	margin: 0 0 1em;
+    color: inherit;
+}
+
+figure
+{
+	margin: 1em;
+}
+
+blockquote, q
+{
+	quotes: '\201c' '\201d' '\2018' '\2019';
+}
+
+blockquote
+{
+	display: block;
+    margin: 1em 0;
+	padding-left: 1em;
+	border-left: 4px solid #555;
+	clear: left;
+}
+
+blockquote:before
+{
+	content: no-open-quote;
+}
+
+blockquote:after
+{
+	content: no-close-quote;
+}
+
+blockquote[cite]:after
+{
+	display: block;
+	content: no-close-quote '\2014' attr(cite);
+}
+
+q
+{
+	font-style: italic;
+}
+
+q:before
+{
+	content: open-quote;
+}
+
+q:after
+{
+	content: close-quote;
+}
+
+q[cite]:after
+{
+	display: inline;
+	content: close-quote ' (' attr(cite) ')';
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+	line-height: 1;
+}
+
+a img
+{
+	border: 0;
+}
+
+hr
+{
+	border-bottom: 1px dotted #444;
+}
+
+dt
+{
+	font-weight: bold;
+}
+
+dt, dd
+{
+	margin-top: .25em;
+	margin-bottom: .25em;
+}
+
+abbr
+{
+	text-transform: uppercase;
+}
+
+abbr[title]
+{
+	border: 0 none;
+}
+
+abbr[title]:after
+{
+	content: ' (' attr(title) ')';
+	text-transform: capitalize;
+}
+
+acronym[title]:after
+{
+	content: ' [' attr(title) ']';
+}
+
+cite
+{
+	font-style: normal;
+	color: #ccc;
+}
+
+cite:before
+{
+	content: ' \2014';
+}
+
+code
+{
+	display: inline-block;
+	margin: .25em auto;
+	padding: .25em;
+	background-color: #ccc;
+}
+
+var
+{
+	border-bottom: 1px dotted;
+}
+
+table
+{
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+
+thead, tfoot
+{
+	font-weight: bold;
+}
+
+table, th, td
+{
+	border: 1px solid #48c;
+}
+
+th
+{
+	text-align: center;
+}
+
+th, td
+{
+	padding: 0.5em;
+}
+
+input[type="submit"],
+input[type="reset"],
+button
+{
+	cursor: pointer;
+}

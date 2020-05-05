@@ -1,0 +1,1 @@
+<h1 class="entry-title title"><?php the_title() ?></h1>

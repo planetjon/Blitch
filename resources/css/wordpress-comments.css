@@ -1,0 +1,39 @@
+#comments {
+}
+
+.commentlist {
+	font-size: 0.8125em;
+}
+
+#respond {
+	padding: 16px;
+	margin: 16px auto 0;
+	background: #ececec;
+	border-radius: 8px;
+}
+
+#respond input[type=text], textarea {
+	outline: none;
+	max-width: 100%;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+}
+
+#respond input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#author {
+	color: #1d1d1d;
+}
+
+#url  {
+}
+
+#submit {
+}
+
+#submit:hover {
+}
