@@ -1,5 +1,5 @@
 <div class="post-meta post-publication">
-	<span>Published</span>
-	<span class="entry-author data">by <?php the_author_posts_link() ?></span>
-	<span class="entry-date data">on <?php echo get_the_date(); ?></span>
+	<span><?php _e( 'Published', 'blitch' ) ?></span>
+	<span class="entry-author data"><?php printf( _x( 'by %s', 'post publication',  'blitch' ), get_the_author_posts_link() ) ?></span>
+	<span class="entry-date data"><?php printf( _x( 'on %s', 'post publication', 'blitch' ), get_the_date() ) ?></span>
 </div>

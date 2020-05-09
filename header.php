@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html <?php language_attributes() ?>>
     <head>
-        <meta charset="<?php bloginfo( 'charset' ) ?>"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<?php wp_head() ?>
 	</head>
 	<body <?php body_class() ?>>
+		<div id="page-container" class="container">
 
-		<div class="page-container container">
+		<?php do_action( 'blitch_topbar' ) ?>
+
+		<a class="assistive-text" href="#page-content" title="<?php esc_attr_e( 'Skip to content', 'blitch' ) ?>"><?php _e( 'Skip to content', 'blitch' ) ?></a>
 
 		<header id="site-header">
 			<div class="container">
-				<a class="assistive-text" href="#page-content" title="<?php esc_attr_e( 'Skip to content', 'blogfolio' ) ?>"><?php _e( 'Skip to content', 'blogfolio' ) ?></a>
-
-				<?php do_action( 'blogfolio_topbar' ) ?>
+				<div class="search-and-nav">
+					<?php \planetjon\blitch\templates\showNavigation( 'primary' ) ?>
+					<?php \planetjon\blitch\templates\showSearch() ?>
+				</div>
 
 				<div class="site-banner">
 					<div class="container">
@@ -27,10 +29,10 @@
 					</div>
 				</div>
 
-				<?php do_action( 'blogfolio_site_header' ) ?>
+				<?php do_action( 'blitch_site_header' ) ?>
 			</div>
 		</header>
 
 		<main id="page-content">
 			<div class="container">
-			<?php do_action( 'blogfolio_before_content' ) ?>
+			<?php do_action( 'blitch_before_content' ) ?>

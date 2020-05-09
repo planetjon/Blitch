@@ -9,8 +9,8 @@ echo paginate_links( array(
 	'format' => '?paged=%#%',
 	'current' => max( 1, get_query_var( 'paged' ) ),
 	'total' => $wp_query->max_num_pages,
-	'prev_text'    => __( '&laquo;', 'blogfolio' ),
-	'next_text'    => __( '&raquo;', 'blogfolio' )
+	'prev_text'    => __( '&laquo;', 'blitch' ),
+	'next_text'    => __( '&raquo;', 'blitch' )
 ) );
 
 ?>

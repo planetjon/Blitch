@@ -5,11 +5,11 @@ $author = isset( $_GET['author_name'] ) ? get_user_by( 'slug', $author_name ) : 
 
 <?php get_header() ?>
 
-<section class="content-container author-page">
-	<h1>Published by <?php echo $author->display_name ?></h1>
+<section class="content-container author-archive archive">
+	<h1 class="author-heading heading">Published by <?php echo esc_html( $author->display_name ) ?></h1>
 	<?php if( $author->description || $author->user_url ) : ?>
 	<div class="synopsis">
-		<p class="description"><?php esc_html_e( $author->description ) ?></p>
+		<p class="description"><?php echo esc_html( $author->description ) ?></p>
 		<dl>
 			<?php if( $author->user_url ) : ?>
 			<dt>Website</dt>

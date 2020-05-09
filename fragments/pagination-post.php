@@ -7,8 +7,8 @@ wp_link_pages( array(
 	'link_before' => '<span class="page-numbers">',
 	'link_after' => '</span>',
 	'next_or_number' => 'next_and_number',
-	'previouspagelink' => __( '&laquo;', 'blogfolio' ),
-	'nextpagelink' => __( '&raquo;', 'blogfolio' ),
+	'previouspagelink' => __( '&laquo;', 'blitch' ),
+	'nextpagelink' => __( '&raquo;', 'blitch' ),
 ) );
 
 ?>

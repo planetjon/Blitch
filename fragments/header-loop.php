@@ -1,1 +1,0 @@
-<h2 class="entry-title title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php the_title() ?></a></h2>

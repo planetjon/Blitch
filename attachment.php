@@ -4,14 +4,14 @@
 <?php while( have_posts() ) : the_post() ?>
 	<article id="post-<?php the_ID() ?>" <?php post_class( 'main-content attachment' ) ?>>
 		<header>
-			<?php do_action( 'blogfolio_attachment_header' ) ?>
+			<?php do_action( 'blitch_attachment_header' ) ?>
 		</header>
 		<div class="entry-content">
 			<?php echo wp_get_attachment_link( $post->ID, 'large', false, true, false ) ?>
-			<?php the_content( __( 'Continue reading &rarr;', 'blogfolio' ) ) ?>
+			<?php the_content( __( 'Continue reading &mldr;', 'blitch' ) ) ?>
 		</div>
 		<footer>
-			<?php do_action( 'blogfolio_attachment_footer' ) ?>
+			<?php do_action( 'blitch_attachment_footer' ) ?>
 		</footer>
 	</article>
 <?php endwhile ?>

@@ -1,10 +1,10 @@
-			<?php do_action( 'blogfolio_after_content' ) ?>
+			<?php do_action( 'blitch_after_content' ) ?>
 			</div><!-- .container -->
 		</main><!-- #page-content -->
 
 		<footer id="site-footer">
 			<div class="container">
-				<?php do_action( 'blogfolio_site_footer' ) ?>
+				<?php do_action( 'blitch_site_footer' ) ?>
 			</div>
 		</footer>
 

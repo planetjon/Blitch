@@ -1,8 +1,59 @@
 
+html,
+body
+{
+	height: 100%;
+}
+
 body
 {
 	margin: 0;
 	padding: 0;
+	background-color: white;
+	font-size: 14pt;
+	font-family: serif;
+	color: #333;
+}
+
+a
+{
+	color: #369;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+a:hover
+{
+	color: #48C;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	margin-bottom: 1em;
+	color: #48c;
+	font-family: sans-serif;
+	word-spacing: normal;
+}
+
+h1
+{
+	font-size: 2em;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size: 1.25em;
+}
+
+h4, h5, h6
+{
+	font-size: 1.125em;
 }
 
 ul,
@@ -102,7 +153,8 @@ a img
 
 hr
 {
-	border-bottom: 1px dotted #444;
+	border-style: none;
+	border-bottom: 1px dotted #aaa;
 }
 
 dt
@@ -167,14 +219,23 @@ table
 	margin-bottom: 1em;
 }
 
-thead, tfoot
-{
-	font-weight: bold;
-}
-
 table, th, td
 {
 	border: 1px solid #48c;
+}
+
+thead,
+tfoot
+{
+	background-color: #48c;
+	color: white;
+	font-weight: bold;
+}
+
+thead a:hover,
+tfoot a:hover
+{
+	color: #fff;
 }
 
 th
@@ -187,9 +248,29 @@ th, td
 	padding: 0.5em;
 }
 
-input[type="submit"],
-input[type="reset"],
-button
+input,
+textarea,
+button,
+a.button
 {
+	padding: 8px;
+	color: #369;
+	background-color: #ececec;
+	border: 1px solid #555;
+	border-radius: 2px;
 	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+a.button:hover
+{
+	color: #48C;
+}
+
+nav
+{
+	text-transform: lowercase;
+	font-variant: small-caps;
 }
