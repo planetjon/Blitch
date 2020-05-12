@@ -486,34 +486,7 @@ body.error404 .not-found
 
 /* widgets */
 
-.widget-box
-{
-	overflow: hidden;
-}
-
-.full-width-content .widget-box
-{
-	margin-right: 8px;
-}
-
-.widget-title
-{
-	margin-bottom: 1em;
-}
-
-.widget-title .text
-{
-	color: inherit;
-}
-
-/* Image widget */
-
-.widget_sp_image-description p
-{
-	font-size: 1em;
-}
-
-/* Search widget */
+/* Search form */
 
 #searchform
 {
