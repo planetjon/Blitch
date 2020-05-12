@@ -359,6 +359,7 @@ nav.secondary .page_item
 {
 	padding: 4px;
 	background-color: #ececec;
+	border-radius: 2px;
 }
 
 .post-classification .data a + a
