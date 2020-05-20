@@ -360,6 +360,7 @@ nav.secondary .page_item
 	padding: 4px;
 	background-color: #ececec;
 	border-radius: 2px;
+	white-space: nowrap;
 }
 
 .post-classification .data a + a
