@@ -75,11 +75,11 @@ function showPagination( $location ) {
 //	Following are implementations that have been hooked into the blitch template hooks.
 
 function showTopbar() {
-	if( has_nav_menu( 'primary' ) )
 	loadFragment( 'topbar' );
 }
 
 function showSiteHeader() {
+	loadFragment( 'siteheader' );
 	showWidgetContainer( 'siteheader' );
 }
 
@@ -98,7 +98,7 @@ function showAfterContent() {
 
 	showWidgetContainer( 'aftercontent' );
 
-	if( is_single() ) {
+	if( is_singular() ) {
 		loadFragment( 'comments' );
 	}
 }
