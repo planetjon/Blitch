@@ -326,12 +326,12 @@ nav.secondary .page_item
 	font-family: sans-serif;
 	font-size: 0.8125em;
 	line-height: 1.5em;
-	font-weight: bold;
 }
 
 .post-meta .label
 {
 	display: block;
+	font-weight: bold;
 }
 
 .post-classification .data
