@@ -19,7 +19,7 @@ a
 {
 	color: #369;
 	text-decoration: none;
-	font-family: sans-serif;
+	font-family: inherit;
 }
 
 a:hover

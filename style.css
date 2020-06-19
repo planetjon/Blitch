@@ -297,11 +297,6 @@ nav.secondary .page_item
 	line-height: 1.5em;
 }
 
-.main-content a
-{
-	font-weight: bold;
-}
-
 .main-content ul,
 .main-content ol
 {
@@ -323,11 +318,6 @@ nav.secondary .page_item
 .heading
 {
 	margin: 0;
-}
-
-.heading a
-{
-	font-family: inherit;
 }
 
 .post-meta
