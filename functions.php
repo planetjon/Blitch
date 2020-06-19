@@ -17,8 +17,6 @@ add_action( 'wp_head', __NAMESPACE__ . '\wp_head' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\wp_enqueue_scripts' );
 add_action( 'comment_form_before', __NAMESPACE__ . '\comment_form_before' );
 
-add_filter( 'body_class', __NAMESPACE__ . '\body_class' );
-
 // To be hooked into after_setup_theme
 function after_setup_theme() {
 	// i18n support.
@@ -143,13 +141,4 @@ function comment_form_before() {
 function wp_head() {
 	printf( '<meta charset="%s"/>', get_bloginfo( 'charset' ) );
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
-}
-
-// add category nicenames in body and post class
-function body_class( $classes ) {
-	if( !is_active_sidebar( 'content-sidebar' ) || is_page_template( 'fullwidthpage.php' ) ) {
-		$classes []= 'full-width-content';
-	}
-
-	return $classes;
 }
