@@ -86,6 +86,7 @@ Blitch is distributed under the terms of the GNU GPL
 #site-header .site-banner-title-text,
 #site-header .site-banner-subtitle-text
 {
+	font-family: sans-serif;
 	color: white;
 }
 
@@ -152,7 +153,6 @@ nav.secondary .page_item
 {
 	position: relative;
 	z-index: 99;
-	font-family: sans-serif;
 }
 
 #site-header nav.primary .menu
@@ -268,14 +268,6 @@ nav.secondary .page_item
 	word-wrap: break-word;
 }
 
-.post-feature .wp-post-image
-{
-	float: left;
-	width: 160px;
-	margin-right: 8px;
-	margin-bottom: 8px;
-}
-
 .main-content .post-excerpt
 {
 	font-weight: bold;
@@ -323,7 +315,6 @@ nav.secondary .page_item
 .post-meta
 {
 	color: #555;
-	font-family: sans-serif;
 	font-size: 0.8125em;
 	line-height: 1.5em;
 }
@@ -363,12 +354,12 @@ nav.secondary .page_item
 body.single .post-feature
 {
 	display: block;
+	margin: 1em 0;
 	text-align: center;
 }
 
 body.single .post-feature .wp-post-image
 {
-	float: none;
 	width: auto;
 	margin: 0;
 }
@@ -408,11 +399,8 @@ body.error404 .not-found
 {
 	padding: 8px;
 	margin: 2px;
-	font-family: sans-serif;
 	font-weight: normal;
-	color: #369;
 	background-color: #ececec;
-	border: 1px solid #aaa;
 	border-radius: 2px;
 	order: 1;
 }
@@ -451,7 +439,6 @@ body.error404 .not-found
 .content-sidebar
 {
 	font-size: 0.8125em;
-	font-family: sans-serif;
 }
 
 .content-sidebar > .container {

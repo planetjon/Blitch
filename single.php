@@ -3,12 +3,12 @@
 <section class="content-container">
 <?php while( have_posts() ) : the_post() ?>
 	<article id="post-<?php the_ID() ?>" <?php post_class( 'main-content blog-post' ) ?>>
-		<div class="post-feature">
-			<?php do_action( 'blitch_post_feature' ) ?>
-		</div>
 		<header>
 			<?php do_action( 'blitch_single_header' ) ?>
 		</header>
+		<div class="post-feature">
+			<?php do_action( 'blitch_post_feature' ) ?>
+		</div>
 		<?php if( has_excerpt() ) : ?>
 			<div class="post-excerpt"><?php the_excerpt() ?></div>
 		<?php endif ?>
