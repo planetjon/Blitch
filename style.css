@@ -478,16 +478,4 @@ body.error404 .not-found
 	background-color: rgba(255,255,255,.5);
 	color: #222;
 	border-style: none;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-#searchform [type="search"] + button
-{
-	background-color: rgba(255,255,255,.5);
-	color: #222;
-	font-weight: bold;
-	border-style: none;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
 }

@@ -1,10 +1,3 @@
-
-html,
-body
-{
-	height: 100%;
-}
-
 body
 {
 	margin: 0;
@@ -17,14 +10,14 @@ body
 
 a
 {
-	color: #2f709b;
+	color: #0072bb;
 	text-decoration: none;
 	font-family: inherit;
 }
 
 a:hover
 {
-	color: #468ebe;
+	color: #b52c96;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -201,8 +194,6 @@ cite:before
 
 code
 {
-	display: inline-block;
-	margin: .25em auto;
 	padding: .25em;
 	background-color: #ccc;
 }
