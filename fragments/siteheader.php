@@ -11,6 +11,6 @@
                 <span class="site-banner-title-text"><?php bloginfo( 'name' ) ?></span>
             </a>
         </h1>
-        <h2 class="site-banner-subtitle"><span class="site-banner-subtitle-text"><?php bloginfo( 'description' ) ?></span></h2>
+        <div class="site-banner-subtitle"><span class="site-banner-subtitle-text"><?php bloginfo( 'description' ) ?></span></div>
     </div>
 </div>

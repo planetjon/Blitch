@@ -82,17 +82,6 @@ function widgets_init() {
 		'after_title' => '</span></h3>'
 	] );
 
-	// Homepage widget area.
-	register_sidebar( [
-		'name' => __( 'Home Page Widget Area', 'blitch' ),
-		'id' => 'home-page-widget-container',
-		'description' => __( 'For placing widgets on the home page', 'blitch' ),
-		'before_widget' => '<div id="%1$s" class="home-widget widget-box %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h2 class="widget-title title"><span class="text">',
-		'after_title' => '</span></h2>'
-	] );
-
 	// Pre content Widget area.
 	register_sidebar( [
 		'name' => __( 'Before Content Widget Area', 'blitch' ),
