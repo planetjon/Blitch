@@ -306,7 +306,6 @@ nav.secondary .page_item
 
 .post-meta
 {
-	color: #555;
 	font-size: 0.8125em;
 	line-height: 1.5em;
 }
@@ -454,20 +453,4 @@ body.error404 .not-found
 .comments-container
 {
 	flex: 0 1 100%;
-}
-
-/* widgets */
-
-/* Search form */
-
-#searchform
-{
-	white-space: nowrap;
-}
-
-#searchform [type="search"]
-{
-	background-color: rgba(255,255,255,.5);
-	color: #222;
-	border-style: none;
 }
