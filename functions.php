@@ -6,18 +6,7 @@ const blitch = 'blitch';
 
 require 'templates.php';
 
-// run theme setup after theme is loaded.
-add_action( 'after_setup_theme', __NAMESPACE__ . '\after_setup_theme' );
-
-// Run widgets initializations.
-add_action( 'widgets_init', __NAMESPACE__ . '\widgets_init' );
-
-// Load scripts and styles
-add_action( 'wp_head', __NAMESPACE__ . '\wp_head' );
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\wp_enqueue_scripts' );
-add_action( 'comment_form_before', __NAMESPACE__ . '\comment_form_before' );
-
-// To be hooked into after_setup_theme
+// Configure theme support
 function after_setup_theme() {
 	// i18n support.
 	load_theme_textdomain( blitch, get_template_directory() . '/assets/languages' );
@@ -47,22 +36,22 @@ function after_setup_theme() {
 	register_nav_menu( 'primary', __( 'Primary Navigation', 'blitch' ) );
 }
 
-// To be hooked into widget_init
+// Initialize widget zones
 function widgets_init() {
-	// Content Sidebar.
+	// Site Sidebar
 	register_sidebar( [
-		'name' => __( 'Content Sidebar', 'blitch' ),
-		'id' => 'content-sidebar',
-		'description' => __( 'For placing widgets alongside content', 'blitch' ),
-		'before_widget' => '<div id="%1$s" class="widget-box %2$s">',
+		'name' => __( 'Site Sidebar', 'blitch' ),
+		'id' => 'site-sidebar-widget-container',
+		'description' => __( 'For placing widgets alongside the site', 'blitch' ),
+		'before_widget' => '<div id="%1$s" class="site-sidebar-widget widget-box %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title title"><span class="text">',
 		'after_title' => '</span></h3>'
 	] );
 
-	// Site Header widget area.
+	// Site Topbar
 	register_sidebar( [
-		'name' => __( 'Site Top Widget Area', 'blitch' ),
+		'name' => __( 'Site Topbar', 'blitch' ),
 		'id' => 'site-topbar-widget-container',
 		'description' => __( 'For placing widgets at the top of the site', 'blitch' ),
 		'before_widget' => '<div id="%1$s" class="site-topbar-widget widget-box %2$s">',
@@ -71,9 +60,9 @@ function widgets_init() {
 		'after_title' => '</span></h3>'
 	] );
 
-	// Site Header widget area.
+	// Site Header
 	register_sidebar( [
-		'name' => __( 'Site Header Widget Area', 'blitch' ),
+		'name' => __( 'Site Header', 'blitch' ),
 		'id' => 'site-header-widget-container',
 		'description' => __( 'For placing widgets immediately after the site header', 'blitch' ),
 		'before_widget' => '<div id="%1$s" class="site-header-widget widget-box %2$s">',
@@ -82,9 +71,9 @@ function widgets_init() {
 		'after_title' => '</span></h3>'
 	] );
 
-	// Pre content Widget area.
+	// Pre content
 	register_sidebar( [
-		'name' => __( 'Before Content Widget Area', 'blitch' ),
+		'name' => __( 'Before Content', 'blitch' ),
 		'id' => 'before-content-widget-container',
 		'description' => __( 'For placing widgets before the content', 'blitch' ),
 		'before_widget' => '<div id="%1$s" class="before-content-widget widget-box %2$s">',
@@ -93,9 +82,9 @@ function widgets_init() {
 		'after_title' => '</span></h3>'
 	] );
 
-	// Post content Widget area.
+	// Post content
 	register_sidebar( [
-		'name' => __( 'After Content Widget Area', 'blitch' ),
+		'name' => __( 'After Content', 'blitch' ),
 		'id' => 'after-content-widget-container',
 		'description' => __( 'For placing widgets after the content', 'blitch' ),
 		'before_widget' => '<div id="%1$s" class="after-content-widget widget-box %2$s">',
@@ -116,7 +105,7 @@ function widgets_init() {
 	] );
 }
 
-// To be hooked into wp_enqueue_scripts
+// Queue scripts and styles
 function wp_enqueue_scripts() {
 	wp_register_style( 'blitch-normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
 	wp_register_style( 'blitch-html', get_template_directory_uri() . '/assets/css/html-styles.css' );
@@ -133,6 +122,7 @@ function wp_enqueue_scripts() {
 	wp_enqueue_style( 'blitch-responsive' );
 }
 
+// Queue core comment styling
 function comment_form_before() {
 	if( !get_option( 'thread_comments' ) ) {
 		return;
@@ -141,8 +131,14 @@ function comment_form_before() {
 	wp_enqueue_script( 'comment-reply' );
 }
 
-// inject header meta
+// Inject header meta
 function wp_head() {
 	printf( '<meta charset="%s"/>', get_bloginfo( 'charset' ) );
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
 }
+
+add_action( 'after_setup_theme', __NAMESPACE__ . '\after_setup_theme' );
+add_action( 'widgets_init', __NAMESPACE__ . '\widgets_init' );
+add_action( 'wp_head', __NAMESPACE__ . '\wp_head' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\wp_enqueue_scripts' );
+add_action( 'comment_form_before', __NAMESPACE__ . '\comment_form_before' );

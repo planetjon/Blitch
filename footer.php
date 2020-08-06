@@ -2,6 +2,8 @@
 			</div><!-- .container -->
 		</main><!-- #page-content -->
 
+		<?php do_action( 'blitch_sidebar' ) ?>
+
 		<footer id="site-footer">
 			<div class="container">
 				<?php do_action( 'blitch_site_footer' ) ?>

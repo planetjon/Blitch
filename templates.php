@@ -13,6 +13,7 @@ const fragments = 'fragments/';
 
 // Hook into Blitch template hooks.
 add_action( 'blitch_topbar', __NAMESPACE__ . '\showTopbar' );
+add_action( 'blitch_sidebar', __NAMESPACE__ . '\showSidebar' );
 add_action( 'blitch_site_header', __NAMESPACE__ . '\showSiteHeader' );
 add_action( 'blitch_site_footer', __NAMESPACE__ . '\showSiteFooter' );
 add_action( 'blitch_before_content', __NAMESPACE__ . '\showBeforeContent' );
@@ -30,6 +31,8 @@ add_action( 'blitch_attachment_footer', __NAMESPACE__ . '\showAttachmentFooter' 
 /*
 	Template Fragment loader, based loosely on get_template_part(). Looks in the child theme first and then the parent theme.
 	The reasoning behind this over get_template_part() is to be able to pass variables to the fragments.
+
+	TODO leverage WP 5.5 template loader
 */
 function loadFragment( $slug, $name = null, array $args = [] ) {
 	$fragments = [];
@@ -57,14 +60,14 @@ function showNavigation( $themeposition ) {
 	loadFragment( 'navigation', $themeposition, compact( 'themeposition' ) );
 }
 
-// Utility method for rendering the search bar.
-function showSearch() {
-	get_search_form();
-}
-
 // Utility method for rendering a widget area.
 function showWidgetContainer( $widgetcontainer ) {
 	loadFragment( 'sidebar', $widgetcontainer, compact( 'widgetcontainer' ) );
+}
+
+// Utility method for rendering the search bar.
+function showSearch() {
+	get_search_form();
 }
 
 // Utility method for rendering a pagination navigation menu.
@@ -76,6 +79,10 @@ function showPagination( $location ) {
 
 function showTopbar() {
 	loadFragment( 'topbar' );
+}
+
+function showSidebar() {
+	showWidgetContainer( null );
 }
 
 function showSiteHeader() {
@@ -92,10 +99,6 @@ function showBeforeContent() {
 }
 
 function showAfterContent() {
-	if( is_single() ) {
-		showWidgetContainer( null );
-	}
-
 	showWidgetContainer( 'aftercontent' );
 
 	if( is_singular() ) {
