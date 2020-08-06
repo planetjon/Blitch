@@ -103,6 +103,17 @@ function widgets_init() {
 		'before_title' => '<h3 class="widget-title title"><span class="text">',
 		'after_title' => '</span></h3>'
 	] );
+
+	// Homepage content
+	register_sidebar( [
+		'name' => __( 'Homepage Sidebar', 'blitch' ),
+		'id' => 'home-page-widget-container',
+		'description' => __( 'For placing widgets on the homepage', 'blitch' ),
+		'before_widget' => '<div id="%1$s" class="home-page-widget widget-box %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title title"><span class="text">',
+		'after_title' => '</span></h3>'
+	] );
 }
 
 // To be hooked into wp_enqueue_scripts
