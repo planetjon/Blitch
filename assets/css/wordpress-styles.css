@@ -92,14 +92,6 @@
 	flex: 0 1 232px;
 }
 
-.sticky
-{
-}
-
-.bypostauthor
-{
-}
-
 .assistive,
 .assistive-text,
 .screen-reader-text
@@ -114,7 +106,7 @@
 .assistive-text:active,
 .assistive-text:focus
 {
-	z-index: 100000; /* Above WP toolbar */
+	z-index: 100000;
 	clip: auto !important;
 	top: 5px;
 	left: 5px;

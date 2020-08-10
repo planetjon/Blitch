@@ -29,20 +29,6 @@
 		margin: 16px 0;
 		font-size: 1.25em;
 	}
-
-	.content-container,
-	.widget-container
-	{
-		width: 100%;
-		min-width: auto;
-	}
-
-	.post-feature .wp-post-image
-	{
-		float: none;
-		width: auto;
-		margin: 0;
-	}
 }
 
 @media screen and (min-width: 1280px)
