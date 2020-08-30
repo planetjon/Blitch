@@ -10,7 +10,7 @@
 			</div>
 		</footer>
 
-		<?php wp_footer() ?>
 		</div><!-- .page-container -->
+		<?php wp_footer() ?>
 	</body>
 </html>
