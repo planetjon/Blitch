@@ -117,7 +117,7 @@ function wp_enqueue_scripts() {
 	wp_enqueue_style( 'blitch-styles' );
 	wp_enqueue_style( 'blitch-wordpress' );
 	if( is_singular() ) {
-		wp_enqueue_style( 'blitch-wordpress-comments' );		
+		wp_enqueue_style( 'blitch-wordpress-comments' );
 	}
 	wp_enqueue_style( 'blitch-responsive' );
 }

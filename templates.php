@@ -42,6 +42,7 @@ function loadFragment( $slug, $name = null, array $args = [] ) {
 	}
 
 	$fragments []= fragments . "{$slug}.php";
+
 	if( $template = locate_template( $fragments ) ) {
 		_loadFragment( $template, $args );
 	}
