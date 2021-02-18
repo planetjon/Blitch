@@ -137,8 +137,14 @@ function wp_head() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
 }
 
+// When The Loop is empty
+function blitch_no_results() {
+	printf( '<p>%s</p>', __( 'Hmmm, there\'s nothing here.', 'blitch' ) );
+}
+
 add_action( 'after_setup_theme', __NAMESPACE__ . '\after_setup_theme' );
 add_action( 'widgets_init', __NAMESPACE__ . '\widgets_init' );
 add_action( 'wp_head', __NAMESPACE__ . '\wp_head' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\wp_enqueue_scripts' );
 add_action( 'comment_form_before', __NAMESPACE__ . '\comment_form_before' );
+add_action( 'blitch_no_results', __NAMESPACE__ . '\blitch_no_results' );

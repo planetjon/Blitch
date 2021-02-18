@@ -366,7 +366,8 @@ body.single .main-content .post-publication
 	margin: 1em 0;
 }
 
-body.error404 .not-found
+body.error404 .not-found,
+body .no-results
 {
 	text-align: center;
 }

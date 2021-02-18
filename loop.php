@@ -1,6 +1,5 @@
 <?php if( !have_posts() ) : ?>
 	<div class="no-results">
-		<p><?php _e( 'Apologies, no results were found.', 'blitch' ) ?></p>
 		<?php do_action( 'blitch_no_results' ) ?>
 	</div>
 <?php endif; ?>
