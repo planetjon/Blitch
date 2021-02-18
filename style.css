@@ -1,49 +1,16 @@
 /*
-Theme Name:		Blitch
-Theme URI:		https://planetjon.ca/projects/blitch/
-Version:		1.4
-Requires PHP:	5.4
-Author:			Jonathan Weatherhead
-Author URI:		https://planetjon.ca
-Text Domain:	blitch
-Domain Path:	/locale/languages
+Theme Name:     Blitch
+Theme URI:      https://planetjon.ca/projects/blitch/
+Version:        1.5
+Requires PHP:   5.4
+Author:         Jonathan Weatherhead
+Author URI:     https://planetjon.ca
+Text Domain:    blitch
+Domain Path:    /locale/languages
 
 Blitch WordPress Theme, Copyright 2020 Jonathan Weatherhead
 Blitch is distributed under the terms of the GNU GPL
 */
-
-/* General */
-
-.anchor
-{
-	display: block;
-	clear: both;
-	overflow: hidden;
-	visibility: hidden;
-	width: 100%;
-	height: 1px;
-	margin: 0 0 -1px;
-}
-
-.float-left
-{
-	float: left;
-}
-
-.float-right
-{
-	float: right;
-}
-
-.clear-left
-{
-	clear: left;
-}
-
-.clear-right
-{
-	clear: right;
-}
 
 /* Containers */
 
@@ -60,14 +27,7 @@ Blitch is distributed under the terms of the GNU GPL
 	padding: 8px;
 }
 
-
 /* Site Header */
-
-#site-header
-{
-	background-image: radial-gradient( circle 987px at 99% 2%, #222 0%, #000 90% );
-	color: white;
-}
 
 #site-header > .container
 {
@@ -89,19 +49,6 @@ Blitch is distributed under the terms of the GNU GPL
 #site-header .site-banner-subtitle
 {
 	margin: 0;
-}
-
-#site-header .site-banner-title-text,
-#site-header .site-banner-subtitle-text
-{
-	font-family: sans-serif;
-	color: white;
-}
-
-#site-header .site-banner img.custom-logo
-{
-	margin-right: 16px;
-	margin-top: 8px;
 }
 
 /* Site Footer */

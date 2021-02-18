@@ -3,28 +3,19 @@ body
 	margin: 0;
 	padding: 0;
 	background-color: white;
-	font-size: 14pt;
-	font-family: sans-serif;
+	font-size: 12pt;
 	color: #333;
 }
 
 a
 {
-	color: #0072bb;
 	text-decoration: none;
 	font-family: inherit;
 }
 
-a:hover
-{
-	color: #b52c96;
-}
-
 h1, h2, h3, h4, h5, h6
 {
-	margin: 0;
-	margin-bottom: 1em;
-	font-family: serif;
+	margin: 1em 0;
 	word-spacing: normal;
 }
 
@@ -58,7 +49,7 @@ ol
 
 ul
 {
-    list-style-type: square;
+	list-style-type: disc;
 }
 
 li
@@ -67,12 +58,6 @@ li
 	margin-bottom: .5em;
 	line-height: 1.25em;
 	list-style-position: outside;
-}
-
-p
-{
-	margin: 0 0 1em;
-    color: inherit;
 }
 
 figure
@@ -88,7 +73,7 @@ blockquote, q
 blockquote
 {
 	display: block;
-    margin: 1em 0;
+	margin: 1em 0;
 	padding-left: 1em;
 	border-left: 4px solid #ccc;
 	clear: left;
@@ -195,7 +180,8 @@ cite:before
 code
 {
 	padding: .25em;
-	background-color: #ccc;
+	color: #70c4f7;
+	background-color: #1e1e1e;
 }
 
 var
