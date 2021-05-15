@@ -1,25 +1,16 @@
-.alignnone
-{
-	max-width: 96%;
-    margin: .5em auto .5em;
-}
-
 .aligncenter
 {
-    display: block;
-    margin: .5em auto .5em;
+	display: block;
 }
 
 .alignright
 {
-    float:right;
-    margin: .5em 0 .5em 1em;
+	float:right;
 }
 
 .alignleft
 {
-    float: left;
-    margin: .5em 1em .5em 0;
+	float: left;
 }
 
 .wp-caption,
@@ -27,7 +18,7 @@
 {
 	text-align: center;
 	background: #fff;
-    border: 1px solid #ddd;
+	border: 1px solid #ddd;
 	box-shadow: 2px 2px 6px 2px #ddd;
 }
 
@@ -35,49 +26,28 @@
 .gallery-item img
 {
 	max-width: 96%;
-    margin: 2% 2% 0;
-    padding: 0;
-    border: 0 none;
+	margin: 2% 2% 0;
+	padding: 0;
+	border: 0 none;
 }
 
 .wp-caption-text,
 .gallery-caption
 {
 	max-width: 96%;
-    margin: 2% 2%;
+	margin: 2% 2%;
 	padding: 0;
 	font-size: 0.8125em;
 	line-height: 1.25;
-	letter-spacing: .0125em;
+	letter-spacing: 0.0125em;
 }
 
 .wp-caption
 {
 	display: block;
 	position: relative;
-    max-width: 96%;
-	margin: .5em auto .5em;
-}
-
-.wp-caption.alignleft
-{
-	margin: .5em 1em .5em 0;
-}
-
-.wp-caption.alignright
-{
-	margin: .5em 0 .5em 1em;
-}
-
-.wp-caption.aligncenter
-{
-	margin: .5em auto .5em;
-}
-
-.wp-caption.alignnone
-{
 	max-width: 96%;
-	margin: .5em auto .5em;
+	margin: 0.5em auto 0.5em;
 }
 
 .gallery

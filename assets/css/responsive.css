@@ -23,12 +23,6 @@
 	{
 		width: 90%;
 	}
-
-	#site-header .site-banner
-	{
-		margin: 16px 0;
-		font-size: 1.25em;
-	}
 }
 
 @media screen and (min-width: 1280px)

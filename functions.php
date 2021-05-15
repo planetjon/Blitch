@@ -124,16 +124,13 @@ function wp_enqueue_scripts() {
 
 // Queue core comment styling
 function comment_form_before() {
-	if( !get_option( 'thread_comments' ) ) {
-		return;
+	if( get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
 	}
-
-	wp_enqueue_script( 'comment-reply' );
 }
 
 // Inject header meta
 function wp_head() {
-	printf( '<meta charset="%s"/>', get_bloginfo( 'charset' ) );
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
 }
 

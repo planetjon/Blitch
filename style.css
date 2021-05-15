@@ -63,6 +63,11 @@ Blitch is distributed under the terms of the GNU GPL
 	font-size: 0.8125em;
 }
 
+#site-footer .site-attribution > *
+{
+	display: block;
+}
+
 /* Navigation */
 
 nav ul
@@ -131,7 +136,7 @@ nav.secondary .page_item
 {
 	display: block;
 	margin: 0;
-	padding: .5em;
+	padding: 0.5em;
 	text-align: center;
 	white-space: nowrap;
 	color: inherit;
@@ -203,7 +208,6 @@ nav.secondary .page_item
 .main-content
 {
 	position: relative;
-	overflow: auto;
 	margin-bottom: 16px;
 	word-wrap: break-word;
 }
@@ -237,7 +241,7 @@ nav.secondary .page_item
 
 .main-content li
 {
-	margin: .5em 0;
+	margin: 0.5em 0;
 }
 
 .main-content .post-meta-container
@@ -272,20 +276,19 @@ nav.secondary .page_item
 
 .post-classification .data + .data
 {
-	margin-left: .25em;
+	margin-left: 0.25em;
 }
 
 .post-classification .data a
 {
 	padding: 4px;
-	background-color: #ececec;
 	border-radius: 2px;
 	white-space: nowrap;
 }
 
 .post-classification .data a + a
 {
-	margin-left: .5em;
+	margin-left: 0.5em;
 }
 
 /* Blog Post */
