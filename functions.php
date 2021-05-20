@@ -32,6 +32,9 @@ function after_setup_theme() {
 	// Post thumbnails support
 	add_theme_support( 'post-thumbnails' );
 
+	// Responsive embeds support
+	add_theme_support( 'responsive-embeds' );
+
 	// Custom menu support
 	register_nav_menu( 'primary', __( 'Primary Navigation', 'blitch' ) );
 }
