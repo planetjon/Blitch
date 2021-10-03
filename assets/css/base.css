@@ -1,0 +1,259 @@
+/* Containers */
+
+.container
+{
+	position: relative;
+}
+
+#page-container > aside > .container,
+#page-container > header > .container,
+#page-container > main > .container,
+#page-container > footer > .container
+{
+	padding: 8px;
+}
+
+/* Site Header */
+
+#site-header > .container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#site-header .site-banner
+{
+	position: relative;
+	text-align: center;
+}
+
+#site-header .site-banner-title,
+#site-header .site-banner-subtitle
+{
+	margin: 0;
+}
+
+/* Site Footer */
+
+#site-footer > .container
+{
+	text-align: center;
+}
+
+#site-footer .site-attribution
+{
+	font-size: 0.8125em;
+}
+
+#site-footer .site-attribution > *
+{
+	display: block;
+}
+
+/* Navigation */
+
+nav ul
+{
+	list-style-type: none;
+}
+
+nav .menu,
+nav .menu-item
+{
+	margin: 0;
+	padding: 0;
+}
+
+nav .menu-item a
+{
+	font-family: inherit;
+}
+
+/* Primary Navigation */
+
+#site-header .search-and-nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#site-header .search-and-nav > nav + #searchform
+{
+	margin-left: 1em;
+}
+
+#site-header nav.primary
+{
+	position: relative;
+	z-index: 99;
+}
+
+#site-header nav.primary .menu-item
+{
+	display: inline-block;
+	position: relative;
+	border-radius: 2px;
+}
+
+#site-header nav.primary .menu-item a
+{
+	display: block;
+	padding: 0.5em;
+	text-align: center;
+	white-space: nowrap;
+	color: inherit;
+}
+
+#site-header nav.primary .sub-menu
+{
+	display: block;
+	position: absolute;
+	left: -9999px;
+	z-index: 2;
+	min-width: 125%;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8125em;
+	box-shadow: 4px 4px 4px #222;
+}
+
+#site-header nav.primary .sub-menu .menu-item
+{
+	width: 100%;
+}
+
+#site-header nav.primary .sub-menu .menu-item a
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: left;
+	border-style: none;
+}
+
+#site-header nav.primary .menu-item:hover > .sub-menu
+{
+	left: 0;
+}
+
+#site-header nav.primary .sub-menu .sub-menu
+{
+	min-width: 66.67%;
+	font-size: 1em;
+}
+
+#site-header nav.primary .sub-menu > .menu-item:hover > .sub-menu
+{
+	top: 0;
+	left: 102%;
+}
+
+/* Site Content */
+
+.content-container > .heading
+{
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.main-content
+{
+	position: relative;
+	margin-bottom: 16px;
+	word-wrap: break-word;
+}
+
+.main-content header
+{
+	margin-bottom: 1em;
+}
+
+.main-content footer
+{
+	clear: left;
+	margin-top: 1em;
+}
+
+.heading
+{
+	margin: 0;
+}
+
+.post-meta
+{
+	font-size: 0.8125em;
+	line-height: 1.5em;
+}
+
+.post-meta .label
+{
+	display: block;
+	font-weight: bold;
+}
+
+.post-classification .data
+{
+	display: inline;
+	line-height: 2.5em;
+}
+
+.post-classification .data + .data
+{
+	margin-left: 0.25em;
+}
+
+.post-classification .data a
+{
+	padding: 4px;
+	border-radius: 2px;
+	white-space: nowrap;
+}
+
+.post-classification .data a + a
+{
+	margin-left: 0.5em;
+}
+
+/* Pagination */
+
+.pagination
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1em 0;
+	text-align: center;
+	justify-content: center;
+}
+
+.pagination:empty
+{
+	display: none;
+}
+
+.pagination .page-numbers
+{
+	padding: 8px;
+	margin: 2px;
+	font-weight: normal;
+	background-color: #ececec;
+	border-radius: 2px;
+	order: 1;
+}
+
+.pagination .page-numbers.current
+{
+	background-color: #aaa;
+	color: black;
+}
+
+.pagination .page-numbers.dots
+{
+	color: black;
+}
+
+.pagination .page-numbers.prev,
+.pagination .page-numbers.next
+{
+	padding: 8px 16px;
+	order: 0;
+}

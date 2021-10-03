@@ -1,0 +1,50 @@
+.main-content .post-excerpt
+{
+	font-weight: bold;
+}
+
+.main-content ul,
+.main-content ol
+{
+	margin-bottom: 1em;
+}
+
+.main-content p
+{
+	line-height: 1.5em;
+}
+
+.main-content li
+{
+	margin: 0.5em 0;
+}
+
+/* Blog Post */
+
+body.single .post-feature
+{
+	display: block;
+	margin: 1em 0;
+	text-align: center;
+}
+
+body.single .post-feature .wp-post-image
+{
+	width: auto;
+	margin: 0;
+}
+
+body.single .main-content header
+{
+	text-align: center;
+}
+
+body.single .main-content .post-publication
+{
+	margin: 1em 0;
+}
+
+body.error404 .not-found
+{
+	text-align: center;
+}

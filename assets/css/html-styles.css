@@ -67,7 +67,7 @@ figure
 
 blockquote, q
 {
-	quotes: '\201c' '\201d' '\2018' '\2019';
+	quotes: "\201c" "\201d" "\2018" "\2019";
 }
 
 blockquote
@@ -92,7 +92,7 @@ blockquote:after
 blockquote[cite]:after
 {
 	display: block;
-	content: no-close-quote '\2014' attr(cite);
+	content: no-close-quote "\2014" attr(cite);
 }
 
 q
@@ -113,7 +113,7 @@ q:after
 q[cite]:after
 {
 	display: inline;
-	content: close-quote ' (' attr(cite) ')';
+	content: close-quote " (" attr(cite) ")";
 }
 
 img
@@ -157,24 +157,23 @@ abbr[title]
 
 abbr[title]:after
 {
-	content: ' (' attr(title) ')';
+	content: " (" attr(title) ")";
 	text-transform: capitalize;
 }
 
 acronym[title]:after
 {
-	content: ' [' attr(title) ']';
+	content: " [" attr(title) "]";
 }
 
 cite
 {
 	font-style: normal;
-	color: #ccc;
 }
 
 cite:before
 {
-	content: ' \2014';
+	content: " \2014";
 }
 
 code

@@ -2,15 +2,10 @@
 
 namespace planetjon\blitch;
 
-const blitch = 'blitch';
-
 require 'templates.php';
 
 // Configure theme support
 function after_setup_theme() {
-	// i18n support.
-	load_theme_textdomain( blitch, get_template_directory() . '/assets/languages' );
-
 	// HTML5 support
 	add_theme_support( 'html5', [ 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ] );
 
@@ -26,7 +21,7 @@ function after_setup_theme() {
 		'height' => 80,
 		'flex-height' => true,
 		'flex-width' => true,
-		'header-text' => array( 'site-banner-title-text' ),
+		'header-text' => [ 'site-banner-title-text' ],
 	] );
 
 	// Post thumbnails support
@@ -110,19 +105,25 @@ function widgets_init() {
 
 // Queue scripts and styles
 function wp_enqueue_scripts() {
-	wp_register_style( 'blitch-normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
 	wp_register_style( 'blitch-html', get_template_directory_uri() . '/assets/css/html-styles.css' );
-	wp_register_style( 'blitch-styles', get_template_directory_uri() . '/style.css', [ 'blitch-normalize', 'blitch-html' ] );
+	wp_register_style( 'blitch-styles', get_template_directory_uri() . '/assets/css/base.css', [ 'blitch-html' ] );
+	wp_register_style( 'blitch-archive', get_template_directory_uri() . '/assets/css/archive.css', [ 'blitch-styles' ] );
+	wp_register_style( 'blitch-singular', get_template_directory_uri() . '/assets/css/singular.css', [ 'blitch-styles' ] );
 	wp_register_style( 'blitch-responsive', get_template_directory_uri() . '/assets/css/responsive.css', [ 'blitch-styles' ] );
 	wp_register_style( 'blitch-wordpress', get_template_directory_uri() . '/assets/css/wordpress-styles.css', [ 'blitch-styles' ] );
 	wp_register_style( 'blitch-wordpress-comments', get_template_directory_uri() . '/assets/css/wordpress-comments.css', [ 'blitch-wordpress' ] );
 
 	wp_enqueue_style( 'blitch-styles' );
 	wp_enqueue_style( 'blitch-wordpress' );
+	wp_enqueue_style( 'blitch-responsive' );
+
 	if( is_singular() ) {
+		wp_enqueue_style( 'blitch-singular' );
 		wp_enqueue_style( 'blitch-wordpress-comments' );
 	}
-	wp_enqueue_style( 'blitch-responsive' );
+	if( is_archive() ) {
+		wp_enqueue_style( 'blitch-archive' );
+	}
 }
 
 // Queue core comment styling

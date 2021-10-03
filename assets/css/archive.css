@@ -1,0 +1,9 @@
+body .no-results
+{
+	text-align: center;
+}
+
+.archive > .synopsis
+{
+	margin: 16px auto;
+}
