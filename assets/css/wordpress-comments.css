@@ -20,10 +20,5 @@
 #commentform input
 {
     order: 1;
-}
-
-#commentform input::before
-{
-    display: block;
-    width: 100%;
+    flex-basis: 100%;
 }
