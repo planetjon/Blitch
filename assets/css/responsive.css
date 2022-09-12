@@ -11,7 +11,8 @@
 #page-container > main > .container,
 #page-container > footer > .container
 {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (min-width: 960px)

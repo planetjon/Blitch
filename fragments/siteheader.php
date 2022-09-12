@@ -7,8 +7,8 @@
 	<div class="container">
 		<?php has_custom_logo() && the_custom_logo() ?>
 		<h1 class="site-banner-title">
-			<a href="<?php echo esc_url( home_url() ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ) ?>" rel="home">
-				<span class="site-banner-title-text"><?php bloginfo( 'name' ) ?></span>
+			<a class="site-banner-title-text" href="<?php echo esc_url( home_url() ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ) ?>" rel="home">
+				<?php bloginfo( 'name' ) ?>
 			</a>
 		</h1>
 		<div class="site-banner-subtitle"><span class="site-banner-subtitle-text"><?php bloginfo( 'description' ) ?></span></div>

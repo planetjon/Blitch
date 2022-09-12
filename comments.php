@@ -1,19 +1,6 @@
 <?php if ( post_password_required() ) return ?>
 
-<?php
-	$commenter = wp_get_current_commenter();
-	$req = get_option( 'require_name_email' );
-	$aria_req = $req ? ' aria-required="true"' : '';
-
-	comment_form( [
-		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'blitch' ) . '</label><br/><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" style="box-sizing:border-box;max-width:100%"></textarea></p>',
-		'fields' => apply_filters( 'comment_form_default_fields', [
-			'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /> <label for="author">' . __( 'Name', 'blitch' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-			'email' => '<p class="comment-form-email"><input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /> <label for="email">' . __( 'Email', 'blitch' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-			'url' => '<p class="comment-form-url"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> <label for="url">' . __( 'Website', 'blitch' ) . '</label></p>'
-		])
-	] );
-?>
+<?php comment_form() ?>
 
 <?php if( have_comments() ) : ?>
 	<div id="commentlist">

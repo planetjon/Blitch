@@ -1,12 +1,18 @@
+.main-content
+{
+	display: flex;
+	flex-direction: column;
+	row-gap:1em;
+}
+
+.main-content header
+{
+	text-align: var(--heading-align);
+}
+
 .main-content .post-excerpt
 {
 	font-weight: bold;
-}
-
-.main-content ul,
-.main-content ol
-{
-	margin-bottom: 1em;
 }
 
 .main-content p
@@ -19,12 +25,16 @@
 	margin: 0.5em 0;
 }
 
+body.error404 .not-found
+{
+	text-align: center;
+}
+
 /* Blog Post */
 
 body.single .post-feature
 {
 	display: block;
-	margin: 1em 0;
 	text-align: center;
 }
 
@@ -34,17 +44,7 @@ body.single .post-feature .wp-post-image
 	margin: 0;
 }
 
-body.single .main-content header
-{
-	text-align: center;
-}
-
-body.single .main-content .post-publication
+body.single .post-publication
 {
 	margin: 1em 0;
-}
-
-body.error404 .not-found
-{
-	text-align: center;
 }

@@ -1,7 +1,7 @@
 #respond
 {
-	padding: 1em;
 	margin-top: 1em;
+	padding: 1em;
 }
 
 #commentlist
@@ -9,16 +9,17 @@
 	margin-top: 1em;
 }
 
+.comment-form-comment,
 .comment-form-author,
 .comment-form-email,
 .comment-form-url
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#commentform input
+#commentform input,
+#commentform textarea
 {
-    order: 1;
     flex-basis: 100%;
 }

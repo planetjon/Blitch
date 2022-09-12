@@ -6,12 +6,8 @@
 		<header>
 			<?php do_action( 'blitch_single_header' ) ?>
 		</header>
-		<div class="post-feature">
-			<?php do_action( 'blitch_post_feature' ) ?>
-		</div>
-		<?php if( has_excerpt() ) : ?>
-			<div class="post-excerpt"><?php the_excerpt() ?></div>
-		<?php endif ?>
+		<div class="post-feature"><?php do_action( 'blitch_post_feature' ) ?></div>
+		<div class="post-excerpt"><?php if( has_excerpt() ) : ?><?php the_excerpt() ?><?php endif ?></div>
 		<div class="post-content">
 			<?php the_content( __( 'Continue reading &mldr;', 'blitch' ) ) ?>
 			<?php \planetjon\blitch\templates\showPagination( 'post' ) ?>

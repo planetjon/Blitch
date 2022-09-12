@@ -154,6 +154,8 @@ function showAttachmentFooter() {
 
 class DummySeparator {
 	function __toString() {
+		// zero width space
+		// @see https://www.fileformat.info/info/unicode/char/200b/index.htm
 		return '&#8203;';
 	}
 }

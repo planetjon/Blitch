@@ -2,9 +2,6 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: white;
-	font-size: 12pt;
-	color: #333;
 }
 
 a
@@ -42,8 +39,7 @@ h4, h5, h6
 ul,
 ol
 {
-	margin: 1em 0;
-	margin-left: 1em;
+	margin: 1em 0 1em 1em;
 	padding: 0;
 }
 
@@ -54,8 +50,7 @@ ul
 
 li
 {
-	margin: 0;
-	margin-bottom: .5em;
+	margin: 0 0 0.5em;
 	line-height: 1.25em;
 	list-style-position: outside;
 }
@@ -75,7 +70,7 @@ blockquote
 	display: block;
 	margin: 1em 0;
 	padding-left: 1em;
-	border-left: 4px solid #ccc;
+	border-left: 4px solid var(--accent);
 	clear: left;
 }
 
@@ -131,7 +126,7 @@ a img
 hr
 {
 	border-style: none;
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted var(--accent);
 }
 
 dt
@@ -178,7 +173,7 @@ cite:before
 
 code
 {
-	background-color: #ccc;
+	background-color: var(--accent);
 }
 
 var
@@ -194,14 +189,14 @@ table
 
 table, th, td
 {
-	border: 1px solid #ccc;
+	border: 1px solid var(--accent);
 }
 
 thead,
 tfoot
 {
 	font-weight: bold;
-	background-color: #ccc;
+	background-color: var(--accent);
 }
 
 th, td
